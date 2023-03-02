@@ -1,0 +1,50 @@
+section {
+    &.footer {
+        @apply xl:p-0 sm:pb-[100px] sm:pt-[140px] sm:px-8;
+        ul {
+            li {
+                &.l {
+                    a {
+                        &.language {
+                            position: relative;
+                            &::before {
+                                @apply xl:-left-7 top-[21px] left-[-25px] absolute h-6 w-6 bg-no-repeat;
+                                content: "";
+                                background-image: url(../../images/globe.png);
+                            }
+
+                            &::after {
+                                content: "\f078";
+                                font-family: "Font Awesome 6 free";
+                                font-weight: 600;
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+
+                    ul {
+                        &.lang-list {
+                            @apply static sm:absolute bottom-8 right-[-90px] text-base hidden invisible;
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            &.lang-list {
+                                @apply visible inline-block;
+                            }
+                        }
+
+                        a {
+                            &.language {
+                                &::after {
+                                    display: inline-block;
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

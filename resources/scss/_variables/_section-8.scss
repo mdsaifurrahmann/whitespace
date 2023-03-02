@@ -1,0 +1,92 @@
+section {
+  &.sec-8 {
+    // .swiper-slide {
+    //   @apply md:w-[52%] w-full lg:w-1/3;
+    // }
+
+    h2 {
+      @apply relative z-[2];
+
+      &::after {
+        content: "";
+        background-image: url(../../images/Group.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 4rem;
+        width: 14rem;
+        right: -45px;
+        top: 38px;
+        background-size: 14rem;
+        z-index: -1;
+        @apply hidden lg:inline-block;
+      }
+    }
+
+    .testimonial-box {
+      @apply py-[60px] px-10 flex flex-col border bg-color-2 rounded-lg;
+
+
+      .quote {
+        @apply m-[-10px];
+
+
+
+        &::before {
+          content: "\f10d";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          color: white;
+          font-size: 84px;
+        }
+
+        .break {
+          @apply w-full h-[2px] bg-white my-[60px];
+        }
+      }
+      .avater{
+        @apply h-[95px] w-[95px] object-cover rounded-full;
+      }
+    }
+    .swiper-slide-active {
+      .testimonial-box {
+        @apply py-[60px] px-10 flex flex-col border bg-white rounded-lg;
+    
+    
+        .quote {
+          @apply m-[-10px];
+    
+    
+    
+          &::before {
+            content: "\f10d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #043873;
+            font-size: 84px;
+          }
+          p{
+            @apply text-color-6;
+          }
+        
+    
+          .break {
+            @apply w-full h-[2px] bg-color-6 my-[60px];
+          }
+        }
+        .avater{
+          @apply h-[95px] w-[95px] object-cover rounded-full;
+        }
+        .name{
+          @apply text-color-6;
+        }
+      }
+    }
+    .main-con{
+      @apply px-0 py-20;
+    }
+    .swiper-pagination-bullet {
+      width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,15px));
+      height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,15px));
+    }
+  }
+}

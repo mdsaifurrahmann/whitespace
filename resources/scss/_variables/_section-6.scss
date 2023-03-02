@@ -1,0 +1,43 @@
+section {
+  &.sec-6 {
+    .container {
+      h2 {
+        position: relative;
+        z-index: 1;
+
+        &.u6 {
+          &::after {
+            content: '';
+            background-image: url(../../images/Element10.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 3rem;
+            width: 20rem;
+            right: 318px;
+            top: 63px;
+            background-size: 18rem;
+            z-index: -1;
+            @apply hidden lg:inline-block;
+          }
+        }
+      }
+
+      .image-area {
+        @apply xl:basis-[96rem];
+      }
+    }
+
+    h2 {
+      position: relative;
+      z-index: 2;
+      
+      &.u7 {
+        &::after {
+          @apply top-[60px] left-32 bg-no-repeat absolute h-12 w-80 bg-[size:18rem] z-[-1] hidden lg:inline-block;
+          content: '';
+          background-image: url(../../images/Element10.png);
+        }
+      }
+    }
+  }
+}

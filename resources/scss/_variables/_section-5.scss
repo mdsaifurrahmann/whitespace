@@ -1,0 +1,30 @@
+section{
+  .bgp{
+    position: relative;
+    img{
+      position: absolute;
+      top: -330px;
+      left: -150px;
+      @apply hidden sm:inline-block md:hidden xl:inline-block;
+    }
+  }
+  &.sec-5{
+    h2{
+      position: relative;
+      z-index: 2;
+      &::after{
+        content: '';
+        background-image: url(../../images/Element6.png);
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 20rem;
+        position: absolute;
+        right: -66px;
+        bottom: 2px;
+        z-index: -1;
+        @apply hidden lg:inline-block;
+      }
+    }
+  }
+  
+}

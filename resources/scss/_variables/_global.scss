@@ -1,0 +1,55 @@
+.btn {
+  @apply px-8 py-5 rounded-lg text-white inline-block;
+
+  &.arrow-right{
+    &::after{
+      content: "\f061";
+      font-family: "Font Awesome 6 free";
+      @apply ml-4 font-semibold;
+    }
+  }
+  &:hover{
+    box-shadow: inset 5px 5px 28px 28px rgba(0,0,0,0.1);
+  }
+}
+.btn2 {
+  @apply px-8 py-5 rounded-lg;
+
+  &.arrow-right{
+    &::after{
+      content: "\f061";
+      font-family: "Font Awesome 6 free";
+      @apply ml-4 font-semibold;
+    }
+  }
+}
+
+.title{
+  @apply font-bold lg:text-[64px] lg:leading-[6rem] sm:text-[54px] sm:leading-[3.5rem] text-4xl ;
+}
+.desc-t-size{
+  @apply xl:text-lg text-base;
+}
+
+.hov-li{
+  &:hover{
+    color: #ffe492;
+  }
+}
+
+.s{
+  box-shadow: 15px 10px 50px rgba(0, 0, 0, 15%);
+}
+
+.list-hov{
+  &:hover{
+    @apply bg-color-4 text-color-6;
+  }
+  
+}
+.li-items{
+  @apply w-full inline-block md:w-[192px] py-4 px-6 bg-color-2 cursor-pointer;
+}
+.title2{
+  color: red;
+}
